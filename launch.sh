@@ -7,7 +7,8 @@ fly_region="bom"
 # Initialise the app config in fly
 fly launch --auto-confirm --copy-config --no-deploy --region "$fly_region" --generate-name --dockerignore-from-gitignore
 # create a volume so the config is persisted, 1gb way more than we need, but is is the smallest we can create
-fly volumes create config --region "$fly_region" --size 1
+# github.com/linuxserver/docker-wireguard#server-mode
+# fly volumes create config --region "$fly_region" --size 1
 # Apps using inbound UDP, need an IP address allocated
 fly ips allocate-v4
 # Deploy the app
