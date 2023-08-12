@@ -2,7 +2,7 @@
 set -euxo pipefail
 cd "$(dirname "$0")"
 
-fly_region="syd"
+fly_region="bom"
 
 # Initialise the app config in fly
 fly launch --auto-confirm --copy-config --no-deploy --region "$fly_region" --generate-name --dockerignore-from-gitignore
