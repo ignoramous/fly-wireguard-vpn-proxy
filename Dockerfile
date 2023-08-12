@@ -1,4 +1,4 @@
-FROM linuxserver/wireguard:1.0.20210914
+FROM linuxserver/wireguard:latest
 
 # Normally with docker, you would set these sysctls via the run command, but fly.io isn't really docker
 RUN echo '\n\
