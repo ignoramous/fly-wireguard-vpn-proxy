@@ -23,12 +23,15 @@ kill_timeout = "20s"
 #  destination = "/config"
 
 [[services]]
-  internal_port = 51820
   protocol = "udp"
-  [services.concurrency]
-    hard_limit = 25
-    soft_limit = 20
-    type = "connections"
+  internal_port = 51820
+  auto_start_machines = false
+  auto_stop_machines = false
 
   [[services.ports]]
     port = 51820
+  [services.concurrency]
+    type = "connections"
+    hard_limit = 25
+    soft_limit = 20
+
