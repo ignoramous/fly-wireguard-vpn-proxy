@@ -18,9 +18,9 @@ kill_timeout = "20s"
   SERVERPORT = "51820"
   SERVERURL = "withered-thunder-3955.fly.dev"
 
-[mounts]
-  destination = "/config"
-  source = "config"
+#[[mounts]]
+#  source = "config"
+#  destination = "/config"
 
 [[services]]
   internal_port = 51820
