@@ -11,6 +11,7 @@ fly launch --auto-confirm --copy-config --no-deploy --region "$fly_region" --gen
 # fly volumes create config --region "$fly_region" --size 1
 # Apps using inbound UDP, need an IP address allocated
 fly ips allocate-v4
+fly ips allocate-v6
 # Deploy the app
 fly deploy
 
