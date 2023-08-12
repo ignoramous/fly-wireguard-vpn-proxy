@@ -10,12 +10,13 @@ kill_timeout = "20s"
   dockerfile = "./Dockerfile"
 
 [env]
-  LOG_CONFS = true
+  LOG_CONFS = "true"
   PEERDNS = "auto"
   PEERS = "1"
-  PGID = 1000
-  PUID = 1000
-  SERVERPORT = 51820
+  PGID = "1000"
+  PUID = "1000"
+  SERVERPORT = "51820"
+  SERVERURL = "withered-thunder-3955.fly.dev"
 
 [mounts]
   destination = "/config"
